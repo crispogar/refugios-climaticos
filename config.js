@@ -1,8 +1,8 @@
 var config = {
-    style: 'https://api.mapbox.com/styles/v1/crispozogar/cmbddmmj9002t01s57utxai9i/draft.html?title=view&access_token=pk.eyJ1IjoiY3Jpc3Bvem9nYXIiLCJhIjoiY2w2OTZpZHNoMDBhbTNlcGhjc2llY2gzeiJ9.gqE20heikpHNJAE4ipsSqA&zoomwheel=true&fresh=true#2/38/-34',
+    style: 'mapbox://styles/crispozogar/cmbgavb2n000q01se45pt9x10',
     // leave commented to use Mapbox Standard Style
     accessToken: 'pk.eyJ1IjoiY3Jpc3Bvem9nYXIiLCJhIjoiY2w2OTZpZHNoMDBhbTNlcGhjc2llY2gzeiJ9.gqE20heikpHNJAE4ipsSqA',
-    showMarkers: true,
+    showMarkers: false,
     markerColor: '#3FB1CE',
     //projection: 'equirectangular',
     //Read more about available projections here
@@ -12,25 +12,25 @@ var config = {
         markerColor: 'orange'
     },
     insetPosition: 'bottom-right',
-    theme: 'dark',
+    theme: 'light',
     use3dTerrain: false, //set true for enabling 3D maps.
     auto: false,
-    title: 'Your Title Goes Here',
-    subtitle: 'The Storytelling Template helps you create an awesome animated map story with ease.',
-    byline: 'By a I.M. Amapper',
-    footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
+    title: '',
+    subtitle: '',
+    byline: '',
+    footer: 'Generalitat de Cataluña, Ayuntamiento de Murcia y Ayuntamiento de Madrid.<br> Creado usando la plantilla de <a href="https://github.com/mapbox/storytelling" target="_blank" style="color: black">Mapbox Storytelling</a>.',
     chapters: [
         {
             id: 'slug-style-id',
             alignment: 'left',
             hidden: false,
-            title: 'San Francisco',
-            image: './assets/san-fran.jpeg',
-            description: 'The first chapter contains a title, image, and camera view for San Francisco, California. Update the chapter data to make it your own.',
+            title: '',
+            image: 'https://www.barcelona.cat/barcelona-pel-clima/sites/default/files/2024-09/RefugisClimatics2024_01.jpg',
+            description: '<i style="font-size:90%">Imagen: Parque de la Ciudadela (Ayuntamiento de Barcelona)</i><br><span style="font-size:120%"><b>Barcelona</b> puso en marcha los <b style="color:#f2c091">● refugios climáticos</b> como medida para combatir las altas temperaturas y ofrecer alternativas para sobrellevarlas. Fue pionera en España, <b>siguiendo los pasos de París</b>.',
             location: {
-                center: [-122.418398, 37.759483],
-                zoom: 8.5,
-                pitch: 60,
+                center: [2.15847, 41.38865],
+                zoom: 12.59,
+                pitch: 0,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
@@ -54,14 +54,14 @@ var config = {
             id: 'second-identifier',
             alignment: 'right',
             hidden: false,
-            title: 'Washington, D.C.',
-            image: './assets/washington-dc.jpg',
-            description: 'The second chapter flies to Washington, D.C., updates the camera pitch, and slowly rotates. <br>  <br> Washington, D.C., the capital of the United States, is a vibrant city known for its iconic landmarks, including the White House, the U.S. Capitol, and the Washington Monument. It serves as the political heart of the nation and a center for history, culture, and international diplomacy.',
+            title: '',
+            image: 'https://lomejor.cat/wp-content/uploads/Hospitalet_ParcdelAlhambra_Robert-Ramos.jpg',
+            description: '<i style="font-size:90%">Imagen: Parque de la Alhambra de Hospitalet de Llobregat (lomejor.cat)</i><br><span style="font-size:120%">En la capital hay más de 300, <a href="https://datos.gob.es/es/catalogo/a09002970-refugios-climaticos-de-los-municipios-de-cataluna" style="color: black">según la Generalitat</a>. Existen <b>cerca de 2.000 refugios oficiales en toda la comunidad</b>, ya que el Ejecutivo catalán también recopila otros espacios que pueden habilitarse para ello.',
             location: {
-                center: [-77.020636, 38.886900],
-                zoom: 8.5,
-                pitch: 60,
-                bearing: -43.2,
+                center: [1.93661, 41.44872],
+                zoom: 9.77,
+                pitch: 0,
+                bearing: 0,
                 // flyTo additional controls-
                 // These options control the flight curve, making it move
                 // slowly and zoom out almost completely before starting
@@ -79,14 +79,14 @@ var config = {
             id: 'third-identifier',
             alignment: 'left',
             hidden: false,
-            title: 'Geneva',
-            image: './assets/geneva.jpg',
-            description: 'Geneva, Switzerland, is a picturesque city nestled along the shores of Lake Geneva, surrounded by the Alps and Jura mountains. Known as a global hub for diplomacy and finance, it is home to numerous international organizations, including the United Nations and the Red Cross.',
+            title: '',
+            image: 'https://www.turismodemurcia.es/images/jardin-de-floridablanca/jardin-de-floridablanca.jpg',
+            description: '<i style="font-size:90%">Imagen: Jardín de Floridablanca (Turismo de Murcia)</i><br><span style="font-size:120%">Otra ciudad que identifica claramente sus refugios es <b>Murcia</b>, uno de los puntos calientes del Mediterráneo. El consistorio ha recopilado <a href="https://www.ayuntamientomurcia-salud.es/index.php/noticias/618-refugios-climaticos" style="color: black">cerca de 70 espacios</a> para protegerse del calor; también hay una veintena de <b>jardines "con cobertura aérea</>".',
             location: {
-                center: [6.15116, 46.20595],
-                zoom: 12.52,
-                pitch: 8.01,
-                bearing: 0.00
+                center: [-1.15469, 37.98882],
+                zoom: 13.12,
+                pitch: 0,
+                bearing: 0
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -96,19 +96,19 @@ var config = {
         },
         {
             id: 'fourth-chapter',
-            alignment: 'fully',
+            alignment: 'right',
             hidden: false,
-            title: 'Buenos Aires',
-            image: './assets/buenos-aires.jpg',
-            description: 'Buenos Aires, the capital of Argentina, is a dynamic city known for its European-inspired architecture, vibrant tango culture, and rich culinary scene. Often called the "Paris of South America," it blends historic charm with modern energy.  You can add as many chapters as you need, just copy the JSON data and make changes.',
+            title: '',
+            image: 'https://cdn.nanarquitectura.com/2024/07/guarderia-plantas-circulo-bellas-artes.jpeg',
+            description: '<i style="font-size:90%">Imagen: Círculo de Bellas Artes (NAN Arquitectura)</i><br><span style="font-size:120%">En <b>Madrid</b>, el ayuntamiento sostiene que cuenta con <a href="https://sede.madrid.es/FrameWork/generacionPDF/boam9679_2523.pdf?numeroPublicacion=9679&idSeccion=f4e2c9d207ac0910VgnVCM2000001f4a900aRCRD&nombreFichero=boam9679_2523&cacheKey=25&guid=194da5caf95b0910VgnVCM2000001f4a900aRCRD&csv=true" style="color: black">cerca de 300 lugares</a> para combatir estos episodios. No obstante, varias <b>entidades privadas</b> se adelantaron al consistorio y se convirtieron en espacios seguros para refugiarse del calor.',
             location: {
-                center: [-58.54195, -34.71600],
-                zoom: 4,
+                center: [-3.67044, 40.41891],
+                zoom: 11.88,
                 pitch: 0,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
-            rotateAnimation: false,
+            rotateAnimation: true,
             callback: '',
             onChapterEnter: [],
             onChapterExit: []
