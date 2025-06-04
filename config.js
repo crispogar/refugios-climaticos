@@ -84,7 +84,7 @@ var config = {
             description: '<i style="font-size:90%">Imagen: Jardín de Floridablanca (Turismo de Murcia)</i><br><span style="font-size:120%">Otra ciudad que identifica claramente sus refugios es <b>Murcia</b>, uno de los puntos calientes del Mediterráneo. El consistorio ha recopilado <a href="https://www.ayuntamientomurcia-salud.es/index.php/noticias/618-refugios-climaticos" style="color: black">cerca de 70 espacios</a> para protegerse del calor; también hay una veintena de <b>jardines "con cobertura aérea</>".',
             location: {
                 center: [-1.15469, 37.98882],
-                zoom: 13.12,
+                zoom: 12.12,
                 pitch: 0,
                 bearing: 0
             },
